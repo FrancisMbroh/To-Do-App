@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: outfit, poppins, roboto, archivo;
+}
+body {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;background: linear-gradient(135deg, #ede59f 10%, #00091e 80%);
+  height: 100vh;
+}
+h3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 20px;
+  text-align: left;
+  color: white;
+}
+h3 img {
+  width: 25px;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  width: 350px;
+  max-width: 550px;
+  background: linear-gradient(135deg, #807303 10%, #1fa288 80%);
+  border-radius: 20px;
+  box-shadow: 1px 1px 1px 1px rgba(20, 30, 48, 0.3);
+}
+
+
+.input {
+  background-color: rgb(214, 214, 214);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 40px;
+  box-shadow: 1px 1px 1px 1px rgba(20, 30, 48, 0.3);
+  width: 100%;
+}
+input {
+  padding: 10px;
+  flex: 1;
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: rgb(0, 0, 0);
+}
+.btn {
+ font-size: 16px;
+  padding: 0 20px;
+  border-radius: 50px;
+  background-color: rgb(49, 39, 14);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover {
+  opacity: 0.7;
+  transition: opacity .2s ease-in-out;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+ul li {
+  color: black;
+  list-style: none;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  padding: 5px 10px 5px 30px;
+  border-radius: 30px;
+  background-color: rgb(197, 197, 197);
+  box-shadow: inset 2px 3px 2px 2px #ededea;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+ul li::before {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: url(images/unchecked.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 60%;
+  left: 8px;
+}
+ul li span {
+  font-weight: bold;
+  padding: 0 5px;
+}
+ul li span:hover {
+  border-radius: 60%;
+  background: linear-gradient(135deg, red 30%, rgb(255, 85, 0));
+  color: white;
+  transition: background-color .2s ease-in-out;
+}
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+ul li.checked::before {
+  background-image: url(images/checked.png);
+}
+ul li.checked span {
+  text-decoration: none;
+}
